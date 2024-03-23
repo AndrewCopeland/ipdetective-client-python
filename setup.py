@@ -14,6 +14,7 @@ setup(
         'Homepage': 'https://ipdetective.io',
         'Source': 'https://github.com/AndrewCopeland/ipdetective-client-python'
     },
+    long_description_content_type='text/markdown',
     packages=find_packages(),
     install_requires=['requests'],
     classifiers=[
