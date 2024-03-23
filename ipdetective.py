@@ -13,7 +13,7 @@ class IPDetective:
             return {"error": "Internal server error occured"}
         return response.json()
 
-    def GetBuilkIpInfo(self, ip_addresses):
+    def GetBulkIpInfo(self, ip_addresses):
         headers = {'x-api-key': self.api_key}
         url = f"{self.base_url}?info=true"
         response = requests.post(url, headers=headers, json=ip_addresses)

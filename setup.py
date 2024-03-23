@@ -1,13 +1,19 @@
 from setuptools import setup, find_packages
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='ipdetective',
-    version='1.0.0',
+    version='1.0.1',
     description='A Python client for IPDetective API',
-    long_description='''This package provides a Python client for retrieving bot and geolocation information for IP addresses using the IPDetective API. It allows users to query various details such as the country code, country name, ASN (Autonomous System Number), and IP Address classification like VPN, Proxy, Datacenter and Bot''',
+    long_description=long_description,
     author='IPDetective',
     author_email='andrew@ipdetective.io',
-    url='https://github.com/AndrewCopeland/ipdetective-client-python',
+    project_urls={
+        'Homepage': 'https://ipdetective.io',
+        'Source': 'https://github.com/AndrewCopeland/ipdetective-client-python'
+    },
     packages=find_packages(),
     install_requires=['requests'],
     classifiers=[
