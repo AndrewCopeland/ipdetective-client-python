@@ -5,7 +5,8 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='ipdetective',
-    version='1.0.1',
+    py_modules=['ipdetective'],
+    version='1.0.2',
     description='A Python client for IPDetective API',
     long_description=long_description,
     author='IPDetective',

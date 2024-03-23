@@ -1,6 +1,5 @@
 import os
 from ipdetective import IPDetective
-
 def main():
     api_key = os.getenv('IPDETECTIVE_API_KEY')
     ip_client = IPDetective(api_key)
